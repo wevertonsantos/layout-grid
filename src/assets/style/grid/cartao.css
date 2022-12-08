@@ -20,3 +20,13 @@
     grid-row: 1 / 4;
     grid-column: 3 / 4;
 }
+
+.secao-vertical .secao__cartoes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%/2, max(165px, 100%/6)), 1fr));
+}
+
+.secao-vertical .cartao{
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+}
