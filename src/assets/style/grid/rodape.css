@@ -1,0 +1,77 @@
+.rodape{
+    display: grid;
+    grid-template-columns: auto 1.5fr auto auto auto auto auto auto 1fr;
+    grid-template-rows: 50% 50%;
+    column-gap: 0.5rem;
+    align-items: center;
+}
+
+.rodape__imagem{
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+
+.rodape__titulo{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.rodape__subtitulo{
+    grid-area: 2 / 2 / 4 / 2;
+}
+
+/* horário início / reprodução / horário fim */
+
+.rodape__horario--inicio{
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.barra__container--reproducao{
+    grid-area: 2 / 4 / 3 / 9;
+    justify-self: center;
+}
+
+.rodape__horario--termino{
+    grid-area: 2 / 9 / 3 / 10;
+}
+
+/* botões play, voltar, anterior, próximo e avançar
+        parte superior reprodução */
+
+.rodape__botao--voltar {
+    grid-area: 1 / 4 / 2 / 6;
+    justify-self: right;
+}
+
+.rodape__botao--anterior{
+    grid-area: 1 / 5 / 2 / 7;
+}
+
+.rodape__botao--play{
+    grid-area: 1 / 6 / 2 / 6;
+    justify-self: center;
+}
+
+.rodape__botao--avancar{
+    grid-area: 1 / 6 / 2 / 8;
+}
+
+.rodape__botao--proximo{
+    grid-area: 1 / 7 / 2 / 9;
+    justify-self: left;
+}
+
+/* botões canto inferior direito
+   volume */
+
+.rodape__botao--volume-down{
+    grid-area: 2 / 11 / 3 / 11;
+    justify-self: right;
+}
+
+.barra__container--volume{
+    grid-area: 2 / 12 / 3 / 12;
+}
+
+.rodape__botao--volume-up{
+    grid-area: 2 / 13 / 3 / 13;
+}
